@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello account!{% endblock %}
+
+{% block body %}
+
+    {% if app.user %}
+        <a href="{{ path('app_account') }}">Mon compte <small>({{ app.user.firstname }})</small></a> |
+        {% if is_granted('ROLE_ADMIN') %}
+            <a href="#{# { path('admin') } #}">Espace Admin</a> |
+        {% endif %}
+        <a href="{{ path('app_logout') }}">Déconnexion</a>
+    {% endif %}
+
+    <main class="container my-auto">
+        <h2>Hello {{ app.user.firstname }} {{ app.user.lastname }}</h2>
+        <a href="{{ path('app_calendar') }}">Calendrier</a> |
+        <a href="{{ path('app_change_password') }}">Modifier mon mot de passe</a>
+    </main>
+
+{% endblock %}
