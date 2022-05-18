@@ -1,0 +1,504 @@
+{
+  "nhits": 153,
+  "parameters": {
+    "dataset": "fr-en-calendrier-scolaire",
+    "rows": 10,
+    "start": 0,
+    "facet": [
+      "description",
+      "population",
+      "start_date",
+      "end_date",
+      "location",
+      "zones",
+      "annee_scolaire"
+    ],
+    "format": "json",
+    "timezone": "UTC"
+  },
+  "records": [
+    {
+      "datasetid": "fr-en-calendrier-scolaire",
+      "recordid": "abd2a74b57bdf38919721c2fa7f2fc117907a3c7",
+      "fields": {
+        "end_date": "2023-01-08T23:00:00+00:00",
+        "start_date": "2022-12-09T23:00:00+00:00",
+        "location": "Polynésie",
+        "annee_scolaire": "2022-2023",
+        "zones": "Polynésie",
+        "description": "Vacances de Noël",
+        "population": "-"
+      },
+      "record_timestamp": "2021-10-21T14:55:26.455Z"
+    },
+    {
+      "datasetid": "fr-en-calendrier-scolaire",
+      "recordid": "35e730882e1fac0ad9fdb0243a52a708b416d78a",
+      "fields": {
+        "end_date": "2022-11-06T23:00:00+00:00",
+        "start_date": "2022-10-21T22:00:00+00:00",
+        "location": "Besançon",
+        "annee_scolaire": "2022-2023",
+        "zones": "Zone A",
+        "description": "Vacances de la Toussaint",
+        "population": "-"
+      },
+      "record_timestamp": "2021-10-21T14:55:26.455Z"
+    },
+    {
+      "datasetid": "fr-en-calendrier-scolaire",
+      "recordid": "05f4f93fb05d40a3b7155c17d4f3444b5a295cea",
+      "fields": {
+        "end_date": "2022-11-06T23:00:00+00:00",
+        "start_date": "2022-10-21T22:00:00+00:00",
+        "location": "Clermont-Ferrand",
+        "annee_scolaire": "2022-2023",
+        "zones": "Zone A",
+        "description": "Vacances de la Toussaint",
+        "population": "-"
+      },
+      "record_timestamp": "2021-10-21T14:55:26.455Z"
+    },
+    {
+      "datasetid": "fr-en-calendrier-scolaire",
+      "recordid": "2a045464753e2d3cecb2ee699d04b0d303b45d30",
+      "fields": {
+        "end_date": "2022-11-06T23:00:00+00:00",
+        "start_date": "2022-10-21T22:00:00+00:00",
+        "location": "Limoges",
+        "annee_scolaire": "2022-2023",
+        "zones": "Zone A",
+        "description": "Vacances de la Toussaint",
+        "population": "-"
+      },
+      "record_timestamp": "2021-10-21T14:55:26.455Z"
+    },
+    {
+      "datasetid": "fr-en-calendrier-scolaire",
+      "recordid": "f0c2117d14a6863f8a4edb9d475f2fd22aa29969",
+      "fields": {
+        "end_date": "2022-11-06T23:00:00+00:00",
+        "start_date": "2022-10-21T22:00:00+00:00",
+        "location": "Nice",
+        "annee_scolaire": "2022-2023",
+        "zones": "Zone B",
+        "description": "Vacances de la Toussaint",
+        "population": "-"
+      },
+      "record_timestamp": "2021-10-21T14:55:26.455Z"
+    },
+    {
+      "datasetid": "fr-en-calendrier-scolaire",
+      "recordid": "28e63ed0feed3d575d0b1ec04495727ab0cd1830",
+      "fields": {
+        "end_date": "2022-11-06T23:00:00+00:00",
+        "start_date": "2022-10-21T22:00:00+00:00",
+        "location": "Reims",
+        "annee_scolaire": "2022-2023",
+        "zones": "Zone B",
+        "description": "Vacances de la Toussaint",
+        "population": "-"
+      },
+      "record_timestamp": "2021-10-21T14:55:26.455Z"
+    },
+    {
+      "datasetid": "fr-en-calendrier-scolaire",
+      "recordid": "1368b31f3da97fcf8d761a17cee1970e132a4bf0",
+      "fields": {
+        "end_date": "2022-11-06T23:00:00+00:00",
+        "start_date": "2022-10-21T22:00:00+00:00",
+        "location": "Créteil",
+        "annee_scolaire": "2022-2023",
+        "zones": "Zone C",
+        "description": "Vacances de la Toussaint",
+        "population": "-"
+      },
+      "record_timestamp": "2021-10-21T14:55:26.455Z"
+    },
+    {
+      "datasetid": "fr-en-calendrier-scolaire",
+      "recordid": "80224a8127aa876dc575094451788fa1797e1744",
+      "fields": {
+        "end_date": "2023-01-02T23:00:00+00:00",
+        "start_date": "2022-12-16T23:00:00+00:00",
+        "location": "Poitiers",
+        "annee_scolaire": "2022-2023",
+        "zones": "Zone A",
+        "description": "Vacances de Noël",
+        "population": "-"
+      },
+      "record_timestamp": "2021-10-21T14:55:26.455Z"
+    },
+    {
+      "datasetid": "fr-en-calendrier-scolaire",
+      "recordid": "819e5e3cb3f472269e07524fe84d17077449c1a0",
+      "fields": {
+        "end_date": "2023-01-02T23:00:00+00:00",
+        "start_date": "2022-12-16T23:00:00+00:00",
+        "location": "Orléans-Tours",
+        "annee_scolaire": "2022-2023",
+        "zones": "Zone B",
+        "description": "Vacances de Noël",
+        "population": "-"
+      },
+      "record_timestamp": "2021-10-21T14:55:26.455Z"
+    },
+    {
+      "datasetid": "fr-en-calendrier-scolaire",
+      "recordid": "86ee536cade27473077e812ed3b253316bb5c057",
+      "fields": {
+        "end_date": "2023-01-02T23:00:00+00:00",
+        "start_date": "2022-12-16T23:00:00+00:00",
+        "location": "Rennes",
+        "annee_scolaire": "2022-2023",
+        "zones": "Zone B",
+        "description": "Vacances de Noël",
+        "population": "-"
+      },
+      "record_timestamp": "2021-10-21T14:55:26.455Z"
+    }
+  ],
+  "facet_groups": [
+    {
+      "name": "description",
+      "facets": [
+        {
+          "name": "Vacances de Noël",
+          "count": 25,
+          "state": "displayed",
+          "path": "Vacances de Noël"
+        },
+        {
+          "name": "Début des Vacances d'Été",
+          "count": 24,
+          "state": "displayed",
+          "path": "Début des Vacances d'Été"
+        },
+        {
+          "name": "Pont de l'Ascension",
+          "count": 24,
+          "state": "displayed",
+          "path": "Pont de l'Ascension"
+        },
+        {
+          "name": "Vacances d'Hiver",
+          "count": 24,
+          "state": "displayed",
+          "path": "Vacances d'Hiver"
+        },
+        {
+          "name": "Vacances de Printemps",
+          "count": 24,
+          "state": "displayed",
+          "path": "Vacances de Printemps"
+        },
+        {
+          "name": "Vacances de la Toussaint",
+          "count": 24,
+          "state": "displayed",
+          "path": "Vacances de la Toussaint"
+        },
+        {
+          "name": "Début des Grandes Vacances",
+          "count": 3,
+          "state": "displayed",
+          "path": "Début des Grandes Vacances"
+        },
+        {
+          "name": "Vacances de Février",
+          "count": 1,
+          "state": "displayed",
+          "path": "Vacances de Février"
+        },
+        {
+          "name": "Vacances de Mai",
+          "count": 1,
+          "state": "displayed",
+          "path": "Vacances de Mai"
+        },
+        {
+          "name": "Vacances de Novembre",
+          "count": 1,
+          "state": "displayed",
+          "path": "Vacances de Novembre"
+        },
+        {
+          "name": "Vacances de Pâques",
+          "count": 1,
+          "state": "displayed",
+          "path": "Vacances de Pâques"
+        },
+        {
+          "name": "Vacances de Septembre",
+          "count": 1,
+          "state": "displayed",
+          "path": "Vacances de Septembre"
+        }
+      ]
+    },
+    {
+      "name": "population",
+      "facets": [
+        {
+          "name": "-",
+          "count": 149,
+          "state": "displayed",
+          "path": "-"
+        },
+        {
+          "name": "Collèges",
+          "count": 1,
+          "state": "displayed",
+          "path": "Collèges"
+        },
+        {
+          "name": "Lycées",
+          "count": 1,
+          "state": "displayed",
+          "path": "Lycées"
+        },
+        {
+          "name": "Premier degré",
+          "count": 1,
+          "state": "displayed",
+          "path": "Premier degré"
+        },
+        {
+          "name": "Premier degré et collèges",
+          "count": 1,
+          "state": "displayed",
+          "path": "Premier degré et collèges"
+        }
+      ]
+    },
+    {
+      "name": "start_date",
+      "facets": [
+        {
+          "name": "2022",
+          "count": 51,
+          "state": "displayed",
+          "path": "2022"
+        },
+        {
+          "name": "2023",
+          "count": 102,
+          "state": "displayed",
+          "path": "2023"
+        }
+      ]
+    },
+    {
+      "name": "end_date",
+      "facets": [
+        {
+          "name": "2022",
+          "count": 26,
+          "state": "displayed",
+          "path": "2022"
+        },
+        {
+          "name": "2023",
+          "count": 127,
+          "state": "displayed",
+          "path": "2023"
+        }
+      ]
+    },
+    {
+      "name": "location",
+      "facets": [
+        {
+          "name": "Polynésie",
+          "count": 9,
+          "state": "displayed",
+          "path": "Polynésie"
+        },
+        {
+          "name": "Aix-Marseille",
+          "count": 6,
+          "state": "displayed",
+          "path": "Aix-Marseille"
+        },
+        {
+          "name": "Amiens",
+          "count": 6,
+          "state": "displayed",
+          "path": "Amiens"
+        },
+        {
+          "name": "Besançon",
+          "count": 6,
+          "state": "displayed",
+          "path": "Besançon"
+        },
+        {
+          "name": "Bordeaux",
+          "count": 6,
+          "state": "displayed",
+          "path": "Bordeaux"
+        },
+        {
+          "name": "Clermont-Ferrand",
+          "count": 6,
+          "state": "displayed",
+          "path": "Clermont-Ferrand"
+        },
+        {
+          "name": "Créteil",
+          "count": 6,
+          "state": "displayed",
+          "path": "Créteil"
+        },
+        {
+          "name": "Dijon",
+          "count": 6,
+          "state": "displayed",
+          "path": "Dijon"
+        },
+        {
+          "name": "Grenoble",
+          "count": 6,
+          "state": "displayed",
+          "path": "Grenoble"
+        },
+        {
+          "name": "Lille",
+          "count": 6,
+          "state": "displayed",
+          "path": "Lille"
+        },
+        {
+          "name": "Limoges",
+          "count": 6,
+          "state": "displayed",
+          "path": "Limoges"
+        },
+        {
+          "name": "Lyon",
+          "count": 6,
+          "state": "displayed",
+          "path": "Lyon"
+        },
+        {
+          "name": "Montpellier",
+          "count": 6,
+          "state": "displayed",
+          "path": "Montpellier"
+        },
+        {
+          "name": "Nancy-Metz",
+          "count": 6,
+          "state": "displayed",
+          "path": "Nancy-Metz"
+        },
+        {
+          "name": "Nantes",
+          "count": 6,
+          "state": "displayed",
+          "path": "Nantes"
+        },
+        {
+          "name": "Nice",
+          "count": 6,
+          "state": "displayed",
+          "path": "Nice"
+        },
+        {
+          "name": "Normandie",
+          "count": 6,
+          "state": "displayed",
+          "path": "Normandie"
+        },
+        {
+          "name": "Orléans-Tours",
+          "count": 6,
+          "state": "displayed",
+          "path": "Orléans-Tours"
+        },
+        {
+          "name": "Paris",
+          "count": 6,
+          "state": "displayed",
+          "path": "Paris"
+        },
+        {
+          "name": "Poitiers",
+          "count": 6,
+          "state": "displayed",
+          "path": "Poitiers"
+        },
+        {
+          "name": "Reims",
+          "count": 6,
+          "state": "displayed",
+          "path": "Reims"
+        },
+        {
+          "name": "Rennes",
+          "count": 6,
+          "state": "displayed",
+          "path": "Rennes"
+        },
+        {
+          "name": "Strasbourg",
+          "count": 6,
+          "state": "displayed",
+          "path": "Strasbourg"
+        },
+        {
+          "name": "Toulouse",
+          "count": 6,
+          "state": "displayed",
+          "path": "Toulouse"
+        },
+        {
+          "name": "Versailles",
+          "count": 6,
+          "state": "displayed",
+          "path": "Versailles"
+        }
+      ]
+    },
+    {
+      "name": "zones",
+      "facets": [
+        {
+          "name": "Zone B",
+          "count": 66,
+          "state": "displayed",
+          "path": "Zone B"
+        },
+        {
+          "name": "Zone A",
+          "count": 48,
+          "state": "displayed",
+          "path": "Zone A"
+        },
+        {
+          "name": "Zone C",
+          "count": 30,
+          "state": "displayed",
+          "path": "Zone C"
+        },
+        {
+          "name": "Polynésie",
+          "count": 9,
+          "state": "displayed",
+          "path": "Polynésie"
+        }
+      ]
+    },
+    {
+      "name": "annee_scolaire",
+      "facets": [
+        {
+          "name": "2022-2023",
+          "count": 153,
+          "state": "refined",
+          "path": "2022-2023"
+        }
+      ]
+    }
+  ]
+}
