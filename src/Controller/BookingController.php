@@ -17,12 +17,6 @@ class BookingController extends AbstractController
 {
 
 
-    #[Route('/calendrier', name: 'app_booking_calendrier', methods: ['GET'])]
-    public function calendar(EntityManagerInterface $entityManager): Response
-    {
-        return $this->render('booking/calendar.html.twig');
-    }
-
     /** Will throw a normal AccessDeniedException */
     #[IsGranted('ROLE_USER', message: 'No access! Get out!')]
     #[Route('/booking', name: 'app_booking', methods: ['GET'])]
@@ -33,6 +27,31 @@ class BookingController extends AbstractController
             ->findAll();
 
         return $this->render('booking/index.html.twig', [
+            'bookings' => $bookings,
+        ]);
+    }
+
+
+    #[Route('/calendrier', name: 'app_booking_calendrier', methods: ['GET'])]
+    public function calendar(EntityManagerInterface $entityManager): Response
+    {
+        $bookings = $entityManager
+            ->getRepository(Booking::class)
+            ->findAll();
+
+        dump($bookings);
+
+        $json = $bookings;
+        $input_arrays = json_encode($json);
+        foreach ($input_arrays as $array){
+            dump($array);
+            $output_arrays[] = $array;
+        }
+        dump(json_decode($output_arrays, true));
+
+
+
+        return $this->render('booking/calendar.html.twig', [
             'bookings' => $bookings,
         ]);
     }

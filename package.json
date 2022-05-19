@@ -5,6 +5,7 @@
         "@symfony/webpack-encore": "^1.7.0",
         "core-js": "^3.0.0",
         "webpack-notifier": "^1.6.0",
+
         "bootstrap-sass": "^3.3.7",
         "bootstrap-tagsinput": "^0.7.1",
         "bootswatch": "^3.3.7",
