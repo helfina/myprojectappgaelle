@@ -5,6 +5,7 @@ namespace App\Controller;
 use App\Entity\Booking;
 use App\Form\BookingType;
 //use App\Repository\BookingRepository;
+use CalendarBundle\Serializer\Serializer;
 use Doctrine\ORM\EntityManagerInterface;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -33,27 +34,25 @@ class BookingController extends AbstractController
 
 
     #[Route('/calendrier', name: 'app_booking_calendrier', methods: ['GET'])]
-    public function calendar(EntityManagerInterface $entityManager): Response
+    public function calendar(EntityManagerInterface $entityManager ): Response
     {
         $bookings = $entityManager
             ->getRepository(Booking::class)
             ->findAll();
 
-        dump($bookings);
-
-        $json = $bookings;
-        $input_arrays = json_encode($json);
-        foreach ($input_arrays as $array){
-            dump($array);
-            $output_arrays[] = $array;
+        $event = [];
+        foreach($bookings as $booking){
+            $event[] = [
+                'id' => $booking->getId(),
+                'start' => $booking->getBeginAt()->format('Y-m-d H:i:s'),
+                'end' => $booking->getEndAt()->format('Y-m-d H:i:s'),
+                'title' => $booking->getTitle(),
+            ];
         }
-        dump(json_decode($output_arrays, true));
 
+        $data = json_encode($event);
 
-
-        return $this->render('booking/calendar.html.twig', [
-            'bookings' => $bookings,
-        ]);
+        return $this->render('booking/calendar.html.twig',compact('data'));
     }
 
     #[Route('/{id}', name: 'app_booking_show', methods: ['GET'])]

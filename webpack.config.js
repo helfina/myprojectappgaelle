@@ -22,7 +22,7 @@ Encore
      */
     .addEntry('app', './assets/app.js')
     .addEntry('calendar', './assets/js/calendar/index.js')
-    //.addEntry('login', './assets/login.js')
+    .addEntry('dataTable', './assets/js/dataTable.js')
     //.addEntry('admin', './assets/admin.js')
     //.addEntry('search', './assets/search.js')
     // enables the Symfony UX Stimulus bridge (used in assets/bootstrap.js)

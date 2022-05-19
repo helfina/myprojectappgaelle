@@ -3,15 +3,18 @@
 {% block title %}Booking index{% endblock %}
 
 {% block body %}
-    <h1>Booking index</h1>
+    <h1 class="text-center">Booking index</h1>
 
-    <table id="example" class="table table-striped" style="width:100%">
+    <a class="btn btn-info" role="button" href="{{ path('app_booking_new') }}">Create new</a>
+
+    <section class="container">
+    <table id="table" class="table table-dark table-hover">
         <thead>
             <tr>
                 <th>Id</th>
-                <th>BeginAt</th>
-                <th>EndAt</th>
-                <th>Title</th>
+                <th>Debut</th>
+                <th>Fin</th>
+                <th>Titre</th>
                 <th>actions</th>
             </tr>
         </thead>
@@ -23,8 +26,8 @@
                 <td>{{ booking.endAt ? booking.endAt|date('Y-m-d H:i:s') : '' }}</td>
                 <td>{{ booking.title }}</td>
                 <td>
-                    <a href="{{ path('app_booking_show', {'id': booking.id}) }}">show</a>
-                    <a href="{{ path('app_booking_edit', {'id': booking.id}) }}">edit</a>
+                    <a class="btn btn-info" role="button" href="{{ path('app_booking_show', {'id': booking.id}) }}">show</a>
+                    <a class="btn btn-success" role="button" href="{{ path('app_booking_edit', {'id': booking.id}) }}">edit</a>
                 </td>
             </tr>
         {% else %}
@@ -34,8 +37,14 @@
         {% endfor %}
         </tbody>
     </table>
+    </section>
 
-    <a href="{{ path('app_booking_new') }}">Create new</a>
+
+
+{% endblock %}
+
+{% block javascripts %}
+    {{ encore_entry_script_tags('dataTable') }}
 
 
 {% endblock %}

@@ -8,21 +8,28 @@
 // any CSS you import will output into a single css file (app.css in this case)
 import './styles/app.scss';
 
-// loads the Bootstrap jQuery plugins
-import 'bootstrap-sass/assets/javascripts/bootstrap/transition.js';
-import 'bootstrap-sass/assets/javascripts/bootstrap/alert.js';
-import 'bootstrap-sass/assets/javascripts/bootstrap/collapse.js';
-import 'bootstrap-sass/assets/javascripts/bootstrap/dropdown.js';
-import 'bootstrap-sass/assets/javascripts/bootstrap/modal.js';
-import 'jquery'
-
-
 // start the Stimulus application
-import './bootstrap';
+import './bootstrap.js';
 const $ = require('jquery');
-require('bootstrap');
+// var dt = require( 'datatables.net' )();
+
+// require('bootstrap/js/dist/tooltip');
+require('bootstrap/js/dist/popover');
+require('bootstrap/js/dist/dropdown');
+
+// require( 'jszip' );
+// require( 'pdfmake' );
+require( 'datatables.net-dt' )();
+require( 'datatables.net-buttons-dt' )();
+require( 'datatables.net-buttons/js/buttons.html5.js' )();
+require( 'datatables.net-buttons/js/buttons.print.js' )();
 
 $(document).ready(function() {
     $('[data-toggle="popover"]').popover();
 });
+
+
+
+
+
 
