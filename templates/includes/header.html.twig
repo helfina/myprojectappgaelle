@@ -1,8 +1,11 @@
 <header>
-    <nav>
-        <a href="{{path('app_home')}}">Accueille</a>
-        <a href="{{path('app_login')}}">Connexion</a>
-        <a href="{{path('app_register')}}">Inscription</a>
-        <a href="{{path('app_logout')}}">Déconnexion</a>
+    <nav class="nav navbar">
+        <a class="nav-link" href="{{path('app_home')}}">Accueil</a>
+        {% if is_granted('ROLE_USER') %}
+        <a class="nav-link" href="{{path('app_account')}}">Mon Compte</a>
+        {% endif %}
+        <a class="nav-link" href="{{path('app_login')}}">Connexion</a>
+        <a class="nav-link" href="{{path('app_register')}}">Inscription</a>
+        <a class="nav-link" href="{{path('app_logout')}}">Déconnexion</a>
     </nav>
 </header>

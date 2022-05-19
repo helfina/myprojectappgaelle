@@ -14,8 +14,18 @@
 
     <main class="container my-auto">
         <h2>Hello {{ app.user.firstname }} {{ app.user.lastname }}</h2>
-        <a href="{{ path('app_calendar') }}">Calendrier</a> |
-        <a href="{{ path('app_change_password') }}">Modifier mon mot de passe</a>
+        <ul class="nav navbar">
+            <li class="nav-link"><a href="{{ path('app_booking_calendar') }}">Calendrier</a>
+            <ul class="drop-down">
+                <li><a href="{{ path('app_booking') }}">Liste</a></li>
+                <li><a href="{{ path('app_booking_new') }}">Ajouter</a></li>
+            </ul>
+
+            </li>
+            <li class="nav-link"><a href="{{ path('app_change_password') }}">Modifier mon mot de passe</a></li>
+        </ul>
+        <a href=""></a> |
+        <a href=""></a>
     </main>
 
 {% endblock %}

@@ -4,8 +4,9 @@ namespace App\Controller;
 
 use App\Entity\Booking;
 use App\Form\BookingType;
-use App\Repository\BookingRepository;
+//use App\Repository\BookingRepository;
 use Doctrine\ORM\EntityManagerInterface;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -14,6 +15,14 @@ use Symfony\Component\Routing\Annotation\Route;
 #[Route('/booking')]
 class BookingController extends AbstractController
 {
+
+
+    #[Route('/calendrier', name: 'app_booking_calendrier', methods: ['GET'])]
+    public function calendar(EntityManagerInterface $entityManager): Response
+    {
+        return $this->render('booking/calendar.html.twig');
+    }
+
     /** Will throw a normal AccessDeniedException */
     #[IsGranted('ROLE_USER', message: 'No access! Get out!')]
     #[Route('/booking', name: 'app_booking', methods: ['GET'])]
@@ -25,6 +34,14 @@ class BookingController extends AbstractController
 
         return $this->render('booking/index.html.twig', [
             'bookings' => $bookings,
+        ]);
+    }
+
+    #[Route('/{id}', name: 'app_booking_show', methods: ['GET'])]
+    public function show(Booking $booking): Response
+    {
+        return $this->render('booking/show.html.twig', [
+            'booking' => $booking,
         ]);
     }
 
@@ -48,13 +65,6 @@ class BookingController extends AbstractController
         ]);
     }
 
-    #[Route('/{id}', name: 'app_booking_show', methods: ['GET'])]
-    public function show(Booking $booking): Response
-    {
-        return $this->render('booking/show.html.twig', [
-            'booking' => $booking,
-        ]);
-    }
 
     #[Route('/{id}/edit', name: 'app_booking_edit', methods: ['GET', 'POST'])]
     public function edit(Request $request, Booking $booking, EntityManagerInterface $entityManager): Response
@@ -85,9 +95,5 @@ class BookingController extends AbstractController
         return $this->redirectToRoute('app_booking', [], Response::HTTP_SEE_OTHER);
     }
 
-    #[Route('/calendar', name: 'app_booking_calendar', methods: ['GET'])]
-    public function calendar(): Response
-    {
-        return $this->render('booking/calendar.html.twig');
-    }
+
 }

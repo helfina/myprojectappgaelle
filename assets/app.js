@@ -6,12 +6,23 @@
  */
 
 // any CSS you import will output into a single css file (app.css in this case)
-import './styles/app.css';
-import './lib/main.css';
+import './styles/app.scss';
+
+// loads the Bootstrap jQuery plugins
+import 'bootstrap-sass/assets/javascripts/bootstrap/transition.js';
+import 'bootstrap-sass/assets/javascripts/bootstrap/alert.js';
+import 'bootstrap-sass/assets/javascripts/bootstrap/collapse.js';
+import 'bootstrap-sass/assets/javascripts/bootstrap/dropdown.js';
+import 'bootstrap-sass/assets/javascripts/bootstrap/modal.js';
+import 'jquery'
+
 
 // start the Stimulus application
 import './bootstrap';
-import './lib/main.js';
-import './lib/locales-all.js'
-import './js/calendar.js'
+const $ = require('jquery');
+require('bootstrap');
+
+$(document).ready(function() {
+    $('[data-toggle="popover"]').popover();
+});
 
